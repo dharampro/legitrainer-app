@@ -18,7 +18,6 @@
         <maven.compiler.target>11</maven.compiler.target>
         <revision>1.0</revision>
         <changelist>-SNAPSHOT</changelist>
-        <springdoc.openapi.version>1.6.7</springdoc.openapi.version>
     </properties>
 
     <dependencies>
@@ -55,12 +54,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-ui</artifactId>
-            <version>${springdoc.openapi.version}</version>
         </dependency>
     </dependencies>
 

@@ -24,10 +24,10 @@ public class User {
   @NotBlank
   private String lastName;
 
-  @Indexed(unique = true)
+  @NotBlank
   private String email;
 
-  @Indexed(unique = true)
+  @NotBlank
   private String phone;
 
   private Address address;

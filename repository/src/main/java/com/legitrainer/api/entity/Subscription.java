@@ -10,6 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Subscription {
   @Id
   private String id;
+  private String subscriptionId;
   private String courseId;
   private String userId;
 }

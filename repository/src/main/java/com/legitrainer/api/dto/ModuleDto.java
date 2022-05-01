@@ -8,6 +8,7 @@ import java.util.Set;
 @Data
 @Builder
 public class ModuleDto {
+  private String moduleId;
   private String title;
   private String description;
   private Set<ContentDto> contents;

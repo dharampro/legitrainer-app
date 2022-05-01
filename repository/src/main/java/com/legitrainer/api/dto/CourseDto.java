@@ -12,5 +12,5 @@ public class CourseDto {
   private String title;
   private Integer length;
   private String thumbnail;
-  private Set<ModuleDto> modules;
+  private Set<String> moduleIds;
 }

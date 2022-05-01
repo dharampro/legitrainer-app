@@ -14,7 +14,8 @@ public class Course {
   private String id;
   private String courseId;
   private String title;
+  private String description;
   private Integer length;
   private String thumbnail;
-  private Set<Module> modules;
+  private Set<String> moduleIds;
 }
