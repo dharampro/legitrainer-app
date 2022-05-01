@@ -6,29 +6,17 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.validation.constraints.NotBlank;
+import java.util.Set;
 
 @Data
-@Document(collection = ModelConstant.USER_COLLECTION)
-public class User {
+@Document(collection = ModelConstant.MODULE_COLLECTION)
+public class Module {
 
   @Id
   private String id;
-
   @Indexed(unique = true)
-  private String userId;
-
-  @NotBlank
-  private String firstName;
-
-  @NotBlank
-  private String lastName;
-
-  @NotBlank
-  private String email;
-
-  @NotBlank
-  private String phone;
-
-  private Address address;
+  private String moduleId;
+  private String title;
+  private String description;
+  private Set<Content> contents;
 }
