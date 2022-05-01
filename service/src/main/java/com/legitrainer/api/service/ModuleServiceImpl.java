@@ -57,7 +57,7 @@ public class ModuleServiceImpl implements ModuleService {
   @Override
   public void deleteModule(String moduleId) {
     if (!StringUtils.hasLength(moduleId)) {
-      throw new BadRequestException(String.format(ErrorMessage.BAD_REQUEST_MODULEID, moduleId));
+      throw new BadRequestException(String.format(ErrorMessage.NOT_MODIFIED_MODULE, moduleId));
     }
     moduleRepository.deleteByModuleId(moduleId);
   }

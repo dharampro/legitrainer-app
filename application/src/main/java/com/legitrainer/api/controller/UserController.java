@@ -19,11 +19,6 @@ public class UserController {
     return ResponseEntity.ok().body(userService.saveUser(userDto));
   }
 
-  @GetMapping
-  public ResponseEntity getTest() {
-    return ResponseEntity.ok().body("Test");
-  }
-
   @GetMapping(ApiEndPoint.USER_ID)
   public ResponseEntity<UserDto> getUserById(@PathVariable String userId) {
     return ResponseEntity.ok().body(userService.getUserById(userId));

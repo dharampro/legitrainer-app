@@ -9,4 +9,7 @@ public class ApiEndPoint {
 
   public static final String MODULE_ROOT="/api/v1/module";
   public static final String MODULE_ID="/{moduleId}";
+
+  public static final String SUBSCRIPTION_ROOT="/api/v1/subscription";
+  public static final String SUBSCRIPTION_ID="/{subscriptionId}";
 }
